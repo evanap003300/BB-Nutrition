@@ -36,7 +36,7 @@ export const Footer = () => {
                         <span className="mx-2 hidden md:inline">|</span>
                         {/* Copyright Notice - line break on mobile, inline on desktop */}
                         <p className="mt-2 md:mt-0 md:inline">
-                            &copy; {currentYear} BB Nutrition Coaching. All Rights Reserved.
+                            &copy; {currentYear} BB Nutrition LLC. All Rights Reserved.
                         </p>
                     </div>
                 </div>
