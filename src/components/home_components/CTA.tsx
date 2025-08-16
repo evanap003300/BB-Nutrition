@@ -21,7 +21,7 @@ export const CTA = () => {
                 {/* The button is styled to be the inverse of the main site buttons,
                     making it stand out on the blue background. */}
                 <a
-                    href="/#apply"
+                    href="/https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
                     className="bg-white text-blue-600 font-bold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
                 >
                     Apply for Coaching Now
