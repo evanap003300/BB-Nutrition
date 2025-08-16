@@ -33,7 +33,11 @@ export const Offerings = () => {
                         <p className="text-gray-600 mb-6 flex-grow">
                             Perfect for a reset or kickstart. Learn the basics and establish foundational habits.
                         </p>
-                        <a href="/#apply" className="w-full text-center bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                        <a 
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="w-full text-center bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
                             Get Started
                         </a>
                     </div>
@@ -51,7 +55,11 @@ export const Offerings = () => {
                         <p className="text-gray-600 mb-6 flex-grow">
                             Deeper progress with habit building, strategy tweaks, and consistent feedback for sustainable fat loss or muscle gain.
                         </p>
-                        <a href="/#apply" className="w-full text-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                        <a 
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="w-full text-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
                             Get Started
                         </a>
                     </div>
@@ -66,7 +74,11 @@ export const Offerings = () => {
                         <p className="text-gray-600 mb-6 flex-grow">
                             Full transformation phase with maximum accountability for serious results and body recomposition.
                         </p>
-                        <a href="/#apply" className="w-full text-center bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                        <a 
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="w-full text-center bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
                             Get Started
                         </a>
                     </div>

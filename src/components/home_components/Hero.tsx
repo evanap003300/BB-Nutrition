@@ -16,7 +16,9 @@ export const Hero = () => {
 
                 <div className="mt-10">
                     <a
-                        href="/#apply"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         className="bg-blue-600 text-white font-bold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
                     >
                         Apply for Coaching
