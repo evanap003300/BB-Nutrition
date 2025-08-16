@@ -61,7 +61,11 @@ export const NavBar = () => {
                         <Link to="/pricing" className="text-lg text-gray-600 hover:text-blue-600 transition-colors duration-300">
                             Pricing
                         </Link>
-                        <a href="/#apply" className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                        <a 
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
                             Apply
                         </a>
                     </div>

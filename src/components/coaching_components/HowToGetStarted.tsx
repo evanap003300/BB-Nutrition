@@ -12,9 +12,11 @@ const Step = ({ number, title, description }) => (
 );
 
 // A reusable CTA button component
-const CTAButton = ({ href, children }) => (
+const CTAButton = ({ children }) => (
     <a
-        href={href}
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
+        target="_blank" 
+        rel="noopener noreferrer"
         className="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
     >
         {children}
@@ -53,7 +55,7 @@ export const HowToGetStarted = () => {
 
                 {/* Final CTA Button */}
                 <div className="mt-20">
-                    <CTAButton href="/#apply">
+                    <CTAButton>
                         Apply for Coaching Now
                     </CTAButton>
                 </div>

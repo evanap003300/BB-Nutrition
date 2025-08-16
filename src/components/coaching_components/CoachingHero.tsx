@@ -1,9 +1,11 @@
 
 // This is a reusable button component we can create
 // to avoid repeating styles for the main call-to-action.
-const CTAButton = ({ href, children }) => (
+const CTAButton = ({ children }) => (
     <a
-        href={href}
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
+        target="_blank" 
+        rel="noopener noreferrer"
         className="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
     >
         {children}
@@ -26,7 +28,7 @@ export const CoachingHero = () => {
                     At BB Nutrition, I offer expert 1-on-1 coaching tailored to your goals—whether that’s fat loss, muscle gain, body recomposition, or simply feeling your best every day.
                 </p>
                 <div className="mt-8">
-                    <CTAButton href={intakeFormLink}>
+                    <CTAButton>
                         Apply for Coaching
                     </CTAButton>
                 </div>
