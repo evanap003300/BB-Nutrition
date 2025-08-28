@@ -1,31 +1,51 @@
 
+import { motion } from 'framer-motion';
+import CTAButton from '../CTAButton';
+
 export const Hero = () => {
+    const intakeFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header";
+
     return (
-        <section className="bg-gray-50 text-center">
+        <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="bg-gray-50 text-center"
+        >
             <div className="container mx-auto px-6 md:px-12 lg:px-24 py-24">
-                <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight"
+                >
                     Personalized Nutrition Coaching to Help You{' '}
                     <span className="text-blue-600">Lose Fat</span>,{' '}
                     <span className="text-blue-500">Build Muscle</span>, &{' '}
                     <span className="text-blue-400">Feel Your Best</span>
-                </h1>
+                </motion.h1>
 
-                <h2 className="text-xl md:text-2xl mt-6 max-w-3xl mx-auto text-gray-600">
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    className="text-xl md:text-2xl mt-6 max-w-3xl mx-auto text-gray-600"
+                >
                     1-on-1 nutrition coaching tailored to your goals, lifestyle, and starting point.
-                </h2>
+                </motion.h2>
 
-                <div className="mt-10">
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-blue-600 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-lg text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
-                    >
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    className="mt-10"
+                >
+                    <CTAButton to={intakeFormLink}>
                         Apply for Coaching
-                    </a>
-                </div>
+                    </CTAButton>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

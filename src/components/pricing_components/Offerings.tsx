@@ -1,30 +1,49 @@
 
+import { motion } from 'framer-motion';
+import CTAButton from '../CTAButton';
+import SecondaryButton from '../SecondaryButton';
+
 // A simple checkmark icon component for the feature list
 const CheckIcon = () => (
     <svg className="w-6 h-6 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
 );
 
 export const Offerings = () => {
+    const intakeFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header";
+
     return (
-        // Section container with a light gray background and ample padding.
-        <section id="pricing" className="bg-gray-50">
+        <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            id="pricing" className="bg-gray-50"
+        >
             <div className="container mx-auto px-6 py-20">
                 {/* Section Header */}
-                <div className="text-center mb-16">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="text-center mb-16"
+                >
                     <h2 className="text-4xl font-extrabold text-gray-900">
                         Choose Your Coaching Plan
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
                         Flexible coaching options designed for real, sustainable results.
                     </p>
-                </div>
+                </motion.div>
 
                 {/* Pricing Cards Container */}
-                {/* Uses a grid layout that stacks on mobile and goes to 3 columns on large screens. */}
                 <div className="grid lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                    
+
                     {/* Card 1: 4 Week Plan */}
-                    <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className="bg-white rounded-xl shadow-lg p-8 flex flex-col"
+                    >
                         <h3 className="text-2xl font-bold text-gray-900">4 Week Plan</h3>
                         <p className="text-gray-500 mt-2">The Perfect Kickstart</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
@@ -33,17 +52,18 @@ export const Offerings = () => {
                         <p className="text-gray-600 mb-6 flex-grow">
                             Perfect for a reset or kickstart. Learn the basics and establish foundational habits.
                         </p>
-                        <a 
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="w-full text-center bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                        <SecondaryButton to={intakeFormLink}>
                             Get Started
-                        </a>
-                    </div>
+                        </SecondaryButton>
+                    </motion.div>
 
                     {/* Card 2: 8 Week Plan (Recommended) */}
-                    <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.6 }}
+                        className="bg-white rounded-xl shadow-lg p-8 flex flex-col"
+                    >
                         <h3 className="text-2xl font-bold text-gray-900">8 Week Plan</h3>
                         <p className="text-gray-500 mt-2">For Deeper Progress</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
@@ -52,16 +72,17 @@ export const Offerings = () => {
                         <p className="text-gray-600 mb-6 flex-grow">
                             Deeper progress with habit building, strategy tweaks, and consistent feedback for sustainable fat loss or muscle gain.
                         </p>
-                        <a 
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="w-full text-center bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                        <SecondaryButton to={intakeFormLink}>
                             Get Started
-                        </a>
-                    </div>
+                        </SecondaryButton>
+                    </motion.div>
 
-                    <div className="bg-white rounded-xl shadow-2xl p-8 flex flex-col border-2 border-blue-600 relative">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.8 }}
+                        className="bg-white rounded-xl shadow-2xl p-8 flex flex-col border-2 border-blue-600 relative"
+                    >
                         <div className="absolute top-0 -translate-y-1/2 bg-blue-600 text-white font-bold tracking-wider uppercase text-sm px-4 py-1 rounded-full">
                             Recommended
                         </div>
@@ -73,17 +94,13 @@ export const Offerings = () => {
                         <p className="text-gray-600 mb-6 flex-grow">
                             Full transformation phase with maximum accountability for serious results and body recomposition.
                         </p>
-                        <a 
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfY9aLJG3k1sotvGkUoS4EBQXqrdCU1qLUjXg1aTdwFQL2lHA/viewform?usp=header"
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="w-full text-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                        <CTAButton to={intakeFormLink}>
                             Get Started
-                        </a>
-                    </div>
+                        </CTAButton>
+                    </motion.div>
 
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
