@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Check } from 'lucide-react';
 
 // A reusable list item for the checklist.
 const CheckListItem = ({ children }) => (
@@ -6,10 +7,12 @@ const CheckListItem = ({ children }) => (
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex items-start"
+        className="flex items-start gap-3"
     >
-        <span className="text-2xl text-green-500 mr-3 mt-1">✓</span>
-        <span className="text-lg text-gray-700">{children}</span>
+        <div className="flex-shrink-0 mt-0.5">
+            <Check className="w-6 h-6 text-gray-900" strokeWidth={2.5} />
+        </div>
+        <span className="text-base text-gray-700">{children}</span>
     </motion.li>
 );
 
@@ -20,6 +23,7 @@ export const WhoIsThisFor = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             className="bg-white"
+            style={{ backgroundColor: '#f0eee6' }}
         >
             <div className="container mx-auto px-6 py-20">
                 {/* Section Header */}
@@ -29,7 +33,7 @@ export const WhoIsThisFor = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                         Is BB Nutrition Coaching Right for You?
                     </h2>
                 </motion.div>
@@ -39,7 +43,7 @@ export const WhoIsThisFor = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md"
+                    className="max-w-2xl mx-auto"
                 >
                     <ul className="space-y-4">
                         <CheckListItem>

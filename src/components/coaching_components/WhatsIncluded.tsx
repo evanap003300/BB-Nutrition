@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import { CheckCircle2 } from 'lucide-react';
 
 // A reusable list item for this section to keep the code clean.
 // It includes the checkmark icon and the text content.
@@ -11,11 +12,11 @@ const IncludedItem = ({ title, description }) => (
         className="flex items-start"
     >
         <div className="flex-shrink-0">
-            <span className="text-3xl text-blue-500">✅</span>
+            <CheckCircle2 className="w-7 h-7 text-gray-900" strokeWidth={2} />
         </div>
         <div className="ml-4">
-            <h3 className="text-lg font-bold text-gray-900">{title}</h3>
-            <p className="mt-1 text-gray-600">{description}</p>
+            <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+            <p className="mt-1 text-base text-gray-600">{description}</p>
         </div>
     </motion.div>
 );
@@ -26,7 +27,7 @@ export const WhatsIncluded = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white"
+            style={{ backgroundColor: '#f0eee6' }}
         >
             <div className="container mx-auto px-6 py-20">
                 {/* Section Header */}
@@ -36,7 +37,7 @@ export const WhatsIncluded = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                         What You Get With 1-on-1 Coaching
                     </h2>
                 </motion.div>

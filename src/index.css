@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f0eee6;
+}
+
+/* Scroll margin for fixed navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
+}

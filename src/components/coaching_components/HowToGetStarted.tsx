@@ -3,20 +3,15 @@ import { motion } from 'framer-motion';
 import CTAButton from '../CTAButton';
 
 // A reusable step component to keep the main component clean.
-const Step = ({ number, title, description }) => (
+const Step = ({ title, description }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="text-center md:text-left"
     >
-        <div className="flex items-center justify-center md:justify-start">
-            <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full font-bold text-xl">
-                {number}
-            </div>
-        </div>
-        <h3 className="mt-4 text-xl font-bold text-gray-900">{title}</h3>
-        <p className="mt-2 text-gray-600">{description}</p>
+        <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+        <p className="mt-2 text-base text-gray-600">{description}</p>
     </motion.div>
 );
 
@@ -29,6 +24,7 @@ export const HowToGetStarted = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             className="bg-gray-50"
+            style={{ backgroundColor: '#f0eee6' }}
         >
             <div className="container mx-auto px-6 py-20 text-center">
                 {/* Section Header */}
@@ -36,7 +32,7 @@ export const HowToGetStarted = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-16"
+                    className="text-3xl md:text-4xl font-bold text-gray-900 mb-16"
                 >
                     Start Your Coaching Journey in 3 Easy Steps
                 </motion.h2>
@@ -44,19 +40,16 @@ export const HowToGetStarted = () => {
                 {/* Steps Grid */}
                 <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                     <Step
-                        number="1"
                         title="Fill Out the Intake Form"
                         description="So I can learn more about you, your goals, and your lifestyle."
                     />
                     <Step
-                        number="2"
                         title="Book a Free Discovery Call"
                         description="An optional call if we need to talk it through before starting."
                     />
                     <Step
-                        number="3"
                         title="Choose Your Plan & Get Started"
-                        description="Once we’re aligned, I’ll send over your first week’s roadmap."
+                        description="Once we're aligned, I'll send over your first week's roadmap."
                     />
                 </div>
 
@@ -68,7 +61,7 @@ export const HowToGetStarted = () => {
                     className="mt-20"
                 >
                     <CTAButton to={intakeFormLink}>
-                        Apply for Coaching Now
+                        Apply for Coaching
                     </CTAButton>
                 </motion.div>
             </div>

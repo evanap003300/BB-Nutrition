@@ -11,14 +11,15 @@ export const CTA = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            id="apply-cta" className="bg-blue-600"
+            id="apply-cta"
+            style={{ backgroundColor: '#f0eee6' }}
         >
             <div className="container mx-auto text-center px-6 py-20 pb-40">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-3xl md:text-4xl font-extrabold text-white"
+                    className="text-3xl md:text-4xl font-bold text-gray-900"
                 >
                     Ready to Take Control of Your Nutrition?
                 </motion.h2>
@@ -27,9 +28,9 @@ export const CTA = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-lg md:text-xl text-blue-100 mt-4 mb-8"
+                    className="text-lg md:text-xl text-gray-600 mt-4 mb-8"
                 >
-                    Let’s build a plan that works for YOU.
+                    Let's build a plan that works for YOU.
                 </motion.p>
 
                 <motion.div
@@ -38,7 +39,7 @@ export const CTA = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
                     <CTAButton to={intakeFormLink}>
-                        Apply for Coaching Now
+                        Apply for Coaching
                     </CTAButton>
                 </motion.div>
             </div>

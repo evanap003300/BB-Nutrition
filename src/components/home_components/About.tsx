@@ -8,6 +8,7 @@ export const About = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             id="about" className="bg-white"
+            style={{ backgroundColor: '#f0eee6' }}
         >
             <div className="container mx-auto px-6 py-20">
                 <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
@@ -39,7 +40,7 @@ export const About = () => {
 
                         <div className="space-y-4 text-gray-600 text-lg">
                             <p>
-                                Hey, I’m <span className="font-bold text-blue-600">Bryce Broome</span>—a certified NASM Nutrition Coach, lifelong athlete, and current student at Clemson University (Go Tigers!).
+                                Hey, I'm <span className="font-bold text-gray-900">Bryce Broome</span>—a certified NASM Nutrition Coach, lifelong athlete, and current student at Clemson University (Go Tigers!).
                             </p>
                             <p>
                                 My journey into nutrition began during my high school years as a competitive runner. I quickly realized that performance, energy, and physique were all deeply tied to the food I was putting into my body. Through intentional, flexible nutrition, I was able to transform not just how I looked—but how I felt and performed.

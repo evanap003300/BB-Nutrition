@@ -10,35 +10,40 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-gray-50 text-center"
+            className="relative overflow-hidden text-center"
+            style={{ backgroundColor: '#f0eee6' }}
         >
-            <div className="container mx-auto px-6 md:px-12 lg:px-24 py-24">
+            {/* Background visual elements */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-gray-400/5 rounded-full blur-3xl translate-x-1/4 -translate-y-1/4" />
+                <div className="absolute bottom-0 left-0 w-80 h-80 bg-gray-500/5 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4" />
+            </div>
+
+            <div className="relative container mx-auto px-6 md:px-12 lg:px-24 pt-40 md:pt-48 pb-28 md:pb-36">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight"
+                    className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight max-w-4xl mx-auto"
                 >
-                    Personalized Nutrition Coaching to Help You{' '}
-                    <span className="text-blue-600">Lose Fat</span>,{' '}
-                    <span className="text-blue-500">Build Muscle</span>, &{' '}
-                    <span className="text-blue-400">Feel Your Best</span>
+                    Transform Your Body With
+                    <span className="block text-gray-900 mt-2">Expert Nutrition Coaching</span>
                 </motion.h1>
 
-                <motion.h2
+                <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-xl md:text-2xl mt-6 max-w-3xl mx-auto text-gray-600"
+                    className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto mt-6"
                 >
-                    1-on-1 nutrition coaching tailored to your goals, lifestyle, and starting point.
-                </motion.h2>
+                    Personalized 1-on-1 coaching to lose fat, build muscle, and feel your best—tailored to your goals and lifestyle.
+                </motion.p>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="mt-10"
+                    className="mt-8"
                 >
                     <CTAButton to={intakeFormLink}>
                         Apply for Coaching

@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import { Info } from 'lucide-react';
 
 // A reusable row component for the plan details to keep the main component clean.
 const PlanRow = ({ duration, description, whoFor }) => (
@@ -7,18 +8,18 @@ const PlanRow = ({ duration, description, whoFor }) => (
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4 md:gap-y-0 py-6 border-b border-gray-200 items-center"
+        className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4 md:gap-y-0 py-6 border-b border-gray-300 items-center"
     >
         {/* Plan Length */}
-        <div className="font-bold text-lg text-blue-600">
+        <div className="font-semibold text-base text-gray-900">
             {duration}
         </div>
         {/* Description */}
-        <div className="text-gray-700">
+        <div className="text-base text-gray-600">
             {description}
         </div>
         {/* Who It's For */}
-        <div className="text-gray-600 italic">
+        <div className="text-base text-gray-600">
             {whoFor}
         </div>
     </motion.div>
@@ -31,6 +32,7 @@ export const CoachingPlans = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             className="bg-gray-50"
+            style={{ backgroundColor: '#f0eee6' }}
         >
             <div className="container mx-auto px-6 py-20">
                 {/* Section Header */}
@@ -40,7 +42,7 @@ export const CoachingPlans = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                         Flexible Coaching Options
                     </h2>
                 </motion.div>
@@ -78,14 +80,17 @@ export const CoachingPlans = () => {
                 </div>
 
                 {/* Note at the bottom */}
-                <motion.p
+                <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="text-center text-gray-600 mt-12 max-w-xl mx-auto"
+                    className="mt-12 max-w-2xl mx-auto flex items-start gap-3 justify-center"
                 >
-                    💬 Note: All coaching plans begin with a detailed intake form to ensure we’re the right fit.
-                </motion.p>
+                    <Info className="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" strokeWidth={2} />
+                    <p className="text-base text-gray-600">
+                        <span className="font-semibold text-gray-900">Note:</span> All coaching plans begin with a detailed intake form to ensure we're the right fit.
+                    </p>
+                </motion.div>
             </div>
         </motion.section>
     );

@@ -17,8 +17,9 @@ export const Offerings = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             id="pricing" className="bg-gray-50"
+            style={{ backgroundColor: '#f0eee6' }}
         >
-            <div className="container mx-auto px-6 py-20">
+            <div className="container mx-auto px-6 pt-32 pb-20">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -26,10 +27,10 @@ export const Offerings = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl font-extrabold text-gray-900">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                         Choose Your Coaching Plan
                     </h2>
-                    <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    <p className="text-base md:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
                         Flexible coaching options designed for real, sustainable results.
                     </p>
                 </motion.div>
@@ -44,12 +45,12 @@ export const Offerings = () => {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="bg-white rounded-xl shadow-lg p-8 flex flex-col"
                     >
-                        <h3 className="text-2xl font-bold text-gray-900">4 Week Plan</h3>
-                        <p className="text-gray-500 mt-2">The Perfect Kickstart</p>
+                        <h3 className="text-xl font-semibold text-gray-900">4 Week Plan</h3>
+                        <p className="text-sm text-gray-600 mt-2">The Perfect Kickstart</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
                             $599
                         </p>
-                        <p className="text-gray-600 mb-6 flex-grow">
+                        <p className="text-base text-gray-600 mb-6 flex-grow">
                             Perfect for a reset or kickstart. Learn the basics and establish foundational habits.
                         </p>
                         <SecondaryButton to={intakeFormLink}>
@@ -64,12 +65,12 @@ export const Offerings = () => {
                         transition={{ duration: 0.5, delay: 0.6 }}
                         className="bg-white rounded-xl shadow-lg p-8 flex flex-col"
                     >
-                        <h3 className="text-2xl font-bold text-gray-900">8 Week Plan</h3>
-                        <p className="text-gray-500 mt-2">For Deeper Progress</p>
+                        <h3 className="text-xl font-semibold text-gray-900">8 Week Plan</h3>
+                        <p className="text-sm text-gray-600 mt-2">For Deeper Progress</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
                             $999
                         </p>
-                        <p className="text-gray-600 mb-6 flex-grow">
+                        <p className="text-base text-gray-600 mb-6 flex-grow">
                             Deeper progress with habit building, strategy tweaks, and consistent feedback for sustainable fat loss or muscle gain.
                         </p>
                         <SecondaryButton to={intakeFormLink}>
@@ -81,17 +82,17 @@ export const Offerings = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
-                        className="bg-white rounded-xl shadow-2xl p-8 flex flex-col border-2 border-blue-600 relative"
+                        className="bg-white rounded-xl shadow-2xl p-8 flex flex-col border-2 border-gray-900 relative"
                     >
-                        <div className="absolute top-0 -translate-y-1/2 bg-blue-600 text-white font-bold tracking-wider uppercase text-sm px-4 py-1 rounded-full">
+                        <div className="absolute top-0 -translate-y-1/2 bg-gray-900 text-white font-bold tracking-wider uppercase text-sm px-4 py-1 rounded-full">
                             Recommended
                         </div>
-                        <h3 className="text-2xl font-bold text-blue-600">12 Week Plan</h3>
-                        <p className="text-gray-500 mt-2">The Full Transformation</p>
+                        <h3 className="text-xl font-semibold text-gray-900">12 Week Plan</h3>
+                        <p className="text-sm text-gray-600 mt-2">The Full Transformation</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
                             $1,359
                         </p>
-                        <p className="text-gray-600 mb-6 flex-grow">
+                        <p className="text-base text-gray-600 mb-6 flex-grow">
                             Full transformation phase with maximum accountability for serious results and body recomposition.
                         </p>
                         <CTAButton to={intakeFormLink}>
