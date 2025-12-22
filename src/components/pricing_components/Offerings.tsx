@@ -47,7 +47,7 @@ export const Offerings = () => {
                         <h3 className="text-2xl font-bold text-gray-900">4 Week Plan</h3>
                         <p className="text-gray-500 mt-2">The Perfect Kickstart</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
-                            $1,999
+                            $599
                         </p>
                         <p className="text-gray-600 mb-6 flex-grow">
                             Perfect for a reset or kickstart. Learn the basics and establish foundational habits.
@@ -67,7 +67,7 @@ export const Offerings = () => {
                         <h3 className="text-2xl font-bold text-gray-900">8 Week Plan</h3>
                         <p className="text-gray-500 mt-2">For Deeper Progress</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
-                            $3,799
+                            $999
                         </p>
                         <p className="text-gray-600 mb-6 flex-grow">
                             Deeper progress with habit building, strategy tweaks, and consistent feedback for sustainable fat loss or muscle gain.
@@ -89,7 +89,7 @@ export const Offerings = () => {
                         <h3 className="text-2xl font-bold text-blue-600">12 Week Plan</h3>
                         <p className="text-gray-500 mt-2">The Full Transformation</p>
                         <p className="text-5xl font-bold text-gray-900 my-6">
-                            $5,499
+                            $1,359
                         </p>
                         <p className="text-gray-600 mb-6 flex-grow">
                             Full transformation phase with maximum accountability for serious results and body recomposition.
